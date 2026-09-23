@@ -1,5 +1,7 @@
 @import url("./normalize.css");
-@import url("./style.css");
+@import url("./header.css");
+@import url("./content.css");
+@import url("./footer.css");
 
 body {
   min-width: 1100px;

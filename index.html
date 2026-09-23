@@ -56,7 +56,110 @@
         </p>
       </div>
     </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <section class="reservation" id="section-reserve">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+
+        <form class="form" action="#" method="post">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="name">Nombre *</label>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              required
+            />
+
+            <label class="form__label" for="number"
+              >Número de comensales *</label
+            >
+            <input
+              class="form__input"
+              type="number"
+              id="number"
+              name="number"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
+
+            <label class="form__label" for="date">Fecha y hora *</label>
+            <input
+              class="form__input"
+              type="datetime-local"
+              id="date"
+              name="date"
+              required
+            />
+
+            <label class="form__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+          </fieldset>
+          <button class="form__button" type="submit">Reservar una mesa</button>
+
+          <label class="form__checkbox-label" for="terminos">
+            <input
+              class="form__checkbox-input"
+              type="checkbox"
+              id="terminos"
+              name="terminos"
+              required
+            />
+            <span>Acepto los términos de uso</span>
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="section-contact">
+      <div class="footer__circle"></div>
+
+      <div class="footer__content">
+        <img
+          class="footer__image"
+          src="images/logo_coffeeshop_light.svg"
+          alt="Logo de Triple Espresso Blanco"
+        />
+
+        <div class="footer__social-media">
+          <p class="footer__social-title">Redes sociales</p>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img
+                  class="footer__social-icon"
+                  src="images/facebook_white.svg"
+                  alt="Facebook"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img
+                  class="footer__social-icon"
+                  src="images/instagram_white.svg"
+                  alt="Facebook"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2026 Jonathan Paul Medina Gamiño</p>
+    </footer>
   </body>
 </html>
